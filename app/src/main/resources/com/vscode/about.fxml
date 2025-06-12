@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="827.0" prefWidth="1281.0" style="-fx-background-image: url('background.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vscode.AboutController">
+   <ImageView fitHeight="866.0" fitWidth="1288.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/background.jpg" />
+      </image>
+   </ImageView>
+    
+    <!-- Header -->
+    <HBox alignment="CENTER_RIGHT" opacity="0.76" prefHeight="82.0" prefWidth="1280.0" spacing="30.0" style="-fx-padding: 10; -fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        
+        <Label style="-fx-text-fill: #fffb00; -fx-font-size: 20px; -fx-font-weight: bold;" text="Transylvania Hotel" />
+        
+        <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="351.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#switchToHome" style="-fx-background-color: black;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" style="-fx-background-color: black;" text="About" textFill="#fffb00">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToContactUs" style="-fx-background-color: black;" text="Contact Us" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+        </HBox>
+        
+        <HBox alignment="CENTER_RIGHT" spacing="5.0" HBox.hgrow="ALWAYS" />
+      <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="431.0" style="-fx-text-fill: #fffb00; -fx-font-size: 20px; -fx-font-weight: bold;" text="Welcome, Name!" fx:id="userNameLabel"/>
+    </HBox>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="184.0" layoutY="134.0" stroke="WHITE" strokeType="INSIDE" width="834.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="184.0" layoutX="451.0" layoutY="341.0" stroke="WHITE" strokeType="INSIDE" width="834.0" />
+   <Polygon fill="WHITE" layoutX="417.0" layoutY="261.0" points="585.0, -41.0, 417.0, 56.0, 417.0, -127.0" stroke="WHITE" strokeType="INSIDE" />
+   <Polygon fill="WHITE" layoutX="34.0" layoutY="468.0" points="237.0, -34.0, 417.0, 57.0, 417.0, -127.0" stroke="WHITE" strokeType="INSIDE" />
+   <Label layoutX="19.0" layoutY="201.0" prefHeight="30.0" prefWidth="796.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="Hotel Reservation System adalah aplikasi berbasis web/desktop yang dirancang untuk" textFill="#0982bf" />
+   <Label layoutX="19.0" layoutY="225.0" prefHeight="30.0" prefWidth="796.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="memudahkan pelanggan dalam melakukan pemesanan kamar hotel secara online" textFill="#0982bf" />
+   <Label layoutX="19.0" layoutY="249.0" prefHeight="30.0" prefWidth="796.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="serta membantu pihak hotel dalam mengelola data reservasi dengan efisien." textFill="#0982bf" />
+   <Label layoutX="19.0" layoutY="171.0" style="-fx-text-fill: black; -fx-font-size: 20px; -fx-font-weight: bold;" text="1. Deskripsi Singkat Aplikasi" />
+   <Label layoutX="470.0" layoutY="391.0" prefHeight="30.0" prefWidth="796.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="- Mempermudah proses pemesanan kamar." textFill="#0982bf" />
+   <Label layoutX="470.0" layoutY="415.0" prefHeight="30.0" prefWidth="796.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="- Meningkatkan efisiensi manajemen hotel." textFill="#0982bf" />
+   <Label layoutX="470.0" layoutY="439.0" prefHeight="30.0" prefWidth="796.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="- Memberikan pengalaman pengguna yang nyaman dan cepat." textFill="#0982bf" />
+   <Label layoutX="470.0" layoutY="361.0" style="-fx-text-fill: black; -fx-font-size: 20px; -fx-font-weight: bold;" text="2. Tujuan dan Manfaat" />
+   <Label layoutX="470.0" layoutY="465.0" prefHeight="30.0" prefWidth="796.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="- Meningkatkan efektivitas pengguna dalam memesan kamar." textFill="#0982bf" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="184.0" layoutY="546.0" stroke="WHITE" strokeType="INSIDE" width="834.0" />
+   <Polygon fill="WHITE" layoutX="597.0" layoutY="673.0" points="417.0, -40.0, 237.0, 57.0, 237.0, -127.0" stroke="WHITE" strokeType="INSIDE" />
+   <Label layoutX="19.0" layoutY="596.0" prefHeight="30.0" prefWidth="796.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="- Pencarian dan pemesanan kamar hotel." textFill="#0982bf" />
+   <Label layoutX="19.0" layoutY="620.0" prefHeight="30.0" prefWidth="796.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="- Manajemen pelanggan dan reservasi." textFill="#0982bf" />
+   <Label layoutX="19.0" layoutY="644.0" prefHeight="30.0" prefWidth="796.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="- Pembayaran online." textFill="#0982bf" />
+   <Label layoutX="19.0" layoutY="566.0" style="-fx-text-fill: black; -fx-font-size: 20px; -fx-font-weight: bold;" text="3. Fitur-Fitur Utama" />
+   <Label layoutX="19.0" layoutY="671.0" prefHeight="30.0" prefWidth="796.0" style="-fx-text-fill: black; -fx-font-size: 20px;" text="- Riwayat dan laporan reservasi." textFill="#0982bf" />
+
+</AnchorPane>

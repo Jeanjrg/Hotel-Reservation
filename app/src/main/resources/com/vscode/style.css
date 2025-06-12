@@ -1,0 +1,21 @@
+.button-yellow {
+    -fx-background-color: #fffb00;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+}
+.button-yellow:hover {
+    -fx-background-color: #ffe066;
+}
+
+.button-outline {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #fffb00;
+    -fx-border-radius: 10;
+}
+.button-outline:hover {
+    -fx-background-color: #fffb00;
+    -fx-text-fill: black;
+}
