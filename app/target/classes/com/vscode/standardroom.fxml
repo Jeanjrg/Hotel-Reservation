@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,86 +11,155 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="827.0" prefWidth="1281.0" style="-fx-background-size: cover; -fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vscode.AboutController">
-    
-    <!-- Header -->
-    <HBox alignment="CENTER_RIGHT" opacity="0.76" prefHeight="82.0" prefWidth="1280.0" spacing="30.0" style="-fx-padding: 10; -fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        
-        <Label style="-fx-text-fill: #fffb00; -fx-font-size: 20px; -fx-font-weight: bold;" text="Transylvania Hotel" />
-        
-        <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="351.0" spacing="20.0">
-         <children>
-            <Button mnemonicParsing="false" onAction="#switchToHome" style="-fx-background-color: black;" text="Home" textFill="WHITE">
-               <font>
-                  <Font size="16.0" />
-               </font>
+<AnchorPane prefHeight="827.0" prefWidth="1281.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vscode.StandardRoomController">
+
+    <!-- Header (copy dari home.fxml, tetap ada di atas) -->
+    <HBox alignment="CENTER" opacity="0.92" prefHeight="82.0" prefWidth="1280.0" spacing="30.0" style="-fx-padding: 10; -fx-background-color: rgba(0,0,0,0.85);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Label style="-fx-text-fill: #fffb00; -fx-font-size: 26px; -fx-font-weight: bold;" text="Transylvania Hotel" />
+        <HBox alignment="CENTER" spacing="10.0">
+            <Button mnemonicParsing="false" onAction="#switchToHome" style="-fx-background-color: none;" text="Home" textFill="WHITE">
+                <font>
+                    <Font size="16.0" />
+                </font>
             </Button>
-            <Button mnemonicParsing="false" style="-fx-background-color: black;" text="About" textFill="WHITE">
-               <font>
-                  <Font size="16.0" />
-               </font>
+            <Button mnemonicParsing="false" onAction="#switchToAbout" style="-fx-background-color: none;" text="About" textFill="WHITE">
+                <font>
+                    <Font size="16.0" />
+                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#switchToContactUs" style="-fx-background-color: black;" text="Contact Us" textFill="WHITE">
-               <font>
-                  <Font size="16.0" />
-               </font>
+            <Button mnemonicParsing="false" onAction="#switchToContactUs" style="-fx-background-color: none;" text="Contact Us" textFill="WHITE">
+                <font>
+                    <Font size="16.0" />
+                </font>
             </Button>
-         </children>
         </HBox>
-        
         <HBox alignment="CENTER_RIGHT" spacing="5.0" HBox.hgrow="ALWAYS" />
-      <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="36.0" prefHeight="30.0" prefWidth="442.0" style="-fx-text-fill: #fffb00; -fx-font-size: 20px; -fx-font-weight: bold;" text="Welcome, Name!" fx:id="userNameLabel"/>
+        <Label fx:id="userNameLabel" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="262.0" style="-fx-text-fill: #fffb00; -fx-font-size: 20px; -fx-font-weight: bold;" text="Welcome, Name!" />
     </HBox>
-   <GridPane alignment="CENTER" layoutX="1174.0" layoutY="82.0" prefHeight="745.0" prefWidth="107.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1182.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+
+    <!-- Konten utama -->
+    <VBox alignment="TOP_CENTER" layoutX="0.0" layoutY="82.0" prefHeight="40.0" prefWidth="1091.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="82.0">
+        <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #333;" text="Standard Room" />
+    </VBox>
+
+     <!-- Pilih kamar, checkin, checkout, payment -->
+     <HBox alignment="CENTER" layoutX="405.0" layoutY="597.0" spacing="40.0" style="-fx-padding: 20;">
+         <!-- Pilih kamar -->
+         <VBox alignment="CENTER" spacing="10.0">
+             <Label style="-fx-font-weight: bold;" text="Pilih Nomor Kamar:">
+            <font>
+               <Font size="16.0" />
+            </font></Label>
+             <ListView fx:id="roomListView" prefHeight="54.0" prefWidth="150.0" />
+         </VBox>
+         <!-- Check-in/out dan payment -->
+         <VBox alignment="CENTER" spacing="10.0">
+             <HBox alignment="CENTER" spacing="10.0">
+                 <Label text="Check-in:" />
+                 <DatePicker fx:id="checkInPicker" promptText="dd/mm/yyyy" />
+             </HBox>
+             <HBox alignment="CENTER" spacing="10.0">
+                 <Label text="Check-out:" />
+                 <DatePicker fx:id="checkOutPicker" promptText="dd/mm/yyyy" />
+             </HBox>
+             <Button fx:id="paymentButton" onAction="#handlePayment" prefWidth="120.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Payment" />
+         </VBox>
+     </HBox>
+
+     <!-- Fasilitas -->
+     <VBox alignment="CENTER" layoutX="14.0" layoutY="170.0" prefHeight="443.0" prefWidth="273.0" spacing="5.0">
+         <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Fasilitas:" />
+         <Label text="• 1 Queen Bed">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+         <Label text="• AC">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+         <Label text="• TV">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+         <Label text="• WiFi">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+         <Label text="• Kamar mandi dalam">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+         <Label text="• Air panas">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+         <Label text="• Sarapan gratis">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+     </VBox>
+   <GridPane alignment="CENTER" layoutX="1150.0" layoutY="85.0" prefHeight="746.0" prefWidth="126.0">
      <columnConstraints>
        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
      </columnConstraints>
      <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
      </rowConstraints>
       <children>
-         <ImageView fitHeight="92.0" fitWidth="97.0" GridPane.halignment="CENTER">
+         <ImageView accessibleRole="BUTTON" fitHeight="112.0" fitWidth="126.0">
             <image>
-               <Image url="@images/StandardRoom.png" />
+               <Image url="@images/Desain%20tanpa%20judul.png" />
             </image>
          </ImageView>
-         <Button mnemonicParsing="false" opacity="0.0" prefHeight="92.0" prefWidth="97.0" style="-fx-border-color: black;" GridPane.halignment="CENTER" />
-         <ImageView fitHeight="92.0" fitWidth="97.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <ImageView accessibleRole="BUTTON" fitHeight="112.0" fitWidth="126.0" GridPane.rowIndex="1">
             <image>
                <Image url="@images/SuperiorRoom.png" />
             </image>
          </ImageView>
-         <ImageView fitHeight="92.0" fitWidth="97.0" GridPane.halignment="CENTER" GridPane.rowIndex="3">
-            <image>
-               <Image url="@images/JuniorSuite.png" />
-            </image>
-         </ImageView>
-         <ImageView fitHeight="92.0" fitWidth="97.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <ImageView accessibleRole="BUTTON" fitHeight="112.0" fitWidth="126.0" GridPane.rowIndex="2">
             <image>
                <Image url="@images/DeluxeRoom.png" />
             </image>
          </ImageView>
-         <ImageView fitHeight="92.0" fitWidth="97.0" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <ImageView fitHeight="112.0" fitWidth="126.0" GridPane.rowIndex="3">
             <image>
-               <Image url="@images/Suite.png" />
+               <Image url="@images/JuniorSuite.png" />
             </image>
          </ImageView>
-         <ImageView fitHeight="92.0" fitWidth="97.0" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+         <ImageView fitHeight="112.0" fitWidth="126.0" GridPane.rowIndex="5">
             <image>
                <Image url="@images/PresidentialSuite.png" />
             </image>
          </ImageView>
-         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="102.0" stroke="BLACK" strokeLineCap="ROUND" strokeWidth="4.0" width="95.0" />
+         <ImageView fitHeight="112.0" fitWidth="126.0" layoutX="10.0" layoutY="638.0" GridPane.rowIndex="4">
+            <image>
+               <Image url="@images/Suite.png" />
+            </image>
+         </ImageView>
+         <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" />
+         <Button layoutX="10.0" layoutY="16.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="5" />
+         <Button layoutX="10.0" layoutY="16.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="4" />
+         <Button layoutX="10.0" layoutY="16.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="3" />
+         <Button layoutX="10.0" layoutY="16.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="2" />
+         <Button layoutX="10.0" layoutY="16.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="1" />
       </children>
    </GridPane>
-
+   <ImageView fitHeight="443.0" fitWidth="976.0" layoutX="305.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="128.0" layoutX="1153.0" layoutY="85.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="3.0" width="120.0" />
 </AnchorPane>

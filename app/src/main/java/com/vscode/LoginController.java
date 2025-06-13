@@ -1,14 +1,15 @@
 package com.vscode;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.Label;
-
 import java.io.File;
 import java.util.List;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 public class LoginController {
     @FXML
@@ -33,6 +34,8 @@ public class LoginController {
             for (User user : users) {
                 if (user.username.equals(username) && user.password.equals(password)) {
                     HomeController.setUserName(user.name);
+                    ContactUsController.setUserName(user.name);
+                    AboutController.setUserName(user.name);
 
                     // Ganti root scene utama, bukan buat stage baru
                     App.setRoot("home");

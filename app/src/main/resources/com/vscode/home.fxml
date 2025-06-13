@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="827.0" prefWidth="1281.0"
-    style="-fx-background-image: url('background.jpg'); -fx-background-size: cover;"
-    xmlns="http://javafx.com/javafx/23.0.1"
-    xmlns:fx="http://javafx.com/fxml/1"
-    fx:controller="com.vscode.HomeController">
+<AnchorPane prefHeight="827.0" prefWidth="1281.0" style="-fx-background-image: url('background.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vscode.HomeController">
 
     <ImageView fitHeight="866.0" fitWidth="1288.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
         <image>
@@ -22,47 +18,43 @@
     </ImageView>
     
     <!-- Header -->
-    <HBox alignment="CENTER" opacity="0.92" prefHeight="82.0" prefWidth="1280.0" spacing="30.0"
-        style="-fx-padding: 10; -fx-background-color: rgba(0,0,0,0.85);"
-        AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <HBox alignment="CENTER" opacity="0.92" prefHeight="82.0" prefWidth="1280.0" spacing="30.0" style="-fx-padding: 10; -fx-background-color: rgba(0,0,0,0.85);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <Label style="-fx-text-fill: #fffb00; -fx-font-size: 26px; -fx-font-weight: bold;" text="Transylvania Hotel" />
         <HBox alignment="CENTER" spacing="10.0">
-            <Button mnemonicParsing="false" onAction="#switchToHome" text="Home">
+            <Button mnemonicParsing="false" onAction="#switchToHome" style="-fx-background-color: none; -fx-text-fill: #fffb00;" text="Home" textFill="#fffb00">
                 <font>
                     <Font size="16.0" />
                 </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#switchToAbout" text="About">
+            <Button mnemonicParsing="false" onAction="#switchToAbout" style="-fx-background-color: none;" text="About" textFill="WHITE">
                 <font>
                     <Font size="16.0" />
                 </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#switchToContactUs" text="Contact Us">
+            <Button mnemonicParsing="false" onAction="#switchToContactUs" style="-fx-background-color: none;" text="Contact Us" textFill="WHITE">
                 <font>
                     <Font size="16.0" />
                 </font>
             </Button>
         </HBox>
         <HBox alignment="CENTER_RIGHT" spacing="5.0" HBox.hgrow="ALWAYS" />
-        <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="262.0"
-            style="-fx-text-fill: #fffb00; -fx-font-size: 20px; -fx-font-weight: bold;"
-            text="Welcome, Name!" fx:id="userNameLabel"/>
+        <Label fx:id="userNameLabel" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="262.0" style="-fx-text-fill: #fffb00; -fx-font-size: 20px; -fx-font-weight: bold;" text="Welcome, Name!" />
     </HBox>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000083" height="177.0" layoutX="168.0" layoutY="486.0" stroke="TRANSPARENT" strokeType="INSIDE" width="947.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000083" height="74.0" layoutX="294.0" layoutY="273.0" stroke="TRANSPARENT" strokeType="INSIDE" width="638.0" />
+    <Button layoutX="957.0" layoutY="574.0" onAction="#switchToStandardRoom" prefHeight="46.0" prefWidth="124.0" style="-fx-background-color: #fffb00; -fx-font-weight: bold;" text="learn more">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Button>
 
     <!-- Konten utama -->
-    <Label alignment="CENTER" layoutX="505.0" layoutY="209.0" prefHeight="123.0" prefWidth="272.0"
-        text="Order now!!" textFill="WHITE">
+    <Label alignment="CENTER" layoutX="419.0" layoutY="247.0" prefHeight="123.0" prefWidth="389.0" text="HotelTransylvania" textFill="WHITE">
         <font>
             <Font name="System Bold Italic" size="40.0" />
         </font>
     </Label>
-    <Label layoutX="375.0" layoutY="378.0" style="-fx-font-weight: bold; -fx-text-fill: white;" text="Check-in date" />
-    <Label layoutX="601.0" layoutY="378.0" style="-fx-font-weight: bold; -fx-text-fill: white;" text="Check-out date" />
-    <DatePicker fx:id="checkIn" layoutX="375.0" layoutY="395.0" prefHeight="30.0" prefWidth="198.0" promptText="dd/mm/yyyy" />
-    <DatePicker fx:id="checkOut" layoutX="601.0" layoutY="395.0" prefHeight="30.0" prefWidth="198.0" promptText="dd/mm/yyyy" />
-    <Button layoutX="821.0" layoutY="395.0" onAction="#switchToStandardRoom" text="Check Rooms">
-        <font>
-            <Font size="14.0" />
-        </font>
-    </Button>
+   <Label layoutX="403.0" layoutY="512.0" style="-fx-text-fill: #fffb00; -fx-font-size: 26px; -fx-font-weight: bold;" text="Enjoy up to 30% off Hotel Transylvania" />
+   <Label layoutX="190.0" layoutY="568.0" style="-fx-text-fill: white; -fx-font-size: 18px;" text="Step into elegance and enjoy incredible savings on qualifying suite stays at Hotel Transylvania. " />
+   <Label layoutX="190.0" layoutY="595.0" style="-fx-text-fill: white; -fx-font-size: 18px;" text="You can save on your luxurious suite experience for stays completed by December 31, 2025." />
 </AnchorPane>

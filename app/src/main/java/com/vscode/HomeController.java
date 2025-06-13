@@ -3,13 +3,11 @@ package com.vscode;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HomeController {
+public class HomeController extends User{
     @FXML
     private Label userNameLabel;
-
     private static String userName = "";
 
-    // Method untuk menerima nama user dari LoginController
     public static void setUserName(String name) {
         userName = name;
     }
