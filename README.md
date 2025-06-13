@@ -69,4 +69,4 @@ app/
 
 ---
 
-**This project is for educational purposes and can be extended for more advanced hotel
+**This project is for educational purposes and can be extended for more advanced hotel**
