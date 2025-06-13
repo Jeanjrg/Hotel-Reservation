@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -12,10 +12,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="827.0" prefWidth="1281.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vscode.StandardRoomController">
+<AnchorPane prefHeight="827.0" prefWidth="1281.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vscode.RoomController">
 
     <!-- Header (copy dari home.fxml, tetap ada di atas) -->
     <HBox alignment="CENTER" opacity="0.92" prefHeight="82.0" prefWidth="1280.0" spacing="30.0" style="-fx-padding: 10; -fx-background-color: rgba(0,0,0,0.85);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -38,12 +37,14 @@
             </Button>
         </HBox>
         <HBox alignment="CENTER_RIGHT" spacing="5.0" HBox.hgrow="ALWAYS" />
-        <Label fx:id="userNameLabel" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="262.0" style="-fx-text-fill: #fffb00; -fx-font-size: 20px; -fx-font-weight: bold;" text="Welcome, Name!" />
+        <Label fx:id="userNameLabel" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="578.0" style="-fx-text-fill: #fffb00; -fx-font-size: 20px; -fx-font-weight: bold;" text="Welcome, Name!" />
     </HBox>
 
     <!-- Konten utama -->
-    <VBox alignment="TOP_CENTER" layoutX="0.0" layoutY="82.0" prefHeight="40.0" prefWidth="1091.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="82.0">
-        <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #333;" text="Standard Room" />
+    <VBox alignment="CENTER" layoutX="0.0" layoutY="82.0" prefHeight="75.0" prefWidth="1145.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="136.0" AnchorPane.topAnchor="82.0">
+      <children>
+           <Label fx:id="roomType" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #333;" text="Standard Room" />
+      </children>
     </VBox>
 
      <!-- Pilih kamar, checkin, checkout, payment -->
@@ -54,7 +55,7 @@
             <font>
                <Font size="16.0" />
             </font></Label>
-             <ListView fx:id="roomListView" prefHeight="54.0" prefWidth="150.0" />
+         <ComboBox fx:id="roomComboBox" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: none; -fx-border-color: black;" />
          </VBox>
          <!-- Check-in/out dan payment -->
          <VBox alignment="CENTER" spacing="10.0">
@@ -69,11 +70,15 @@
              <Button fx:id="paymentButton" onAction="#handlePayment" prefWidth="120.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Payment" />
          </VBox>
      </HBox>
+   <ImageView fx:id="roomImageView" fitHeight="450.0" fitWidth="850.0" layoutX="281.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/StandardRoomView.jpg" />
+      </image></ImageView>
 
      <!-- Fasilitas -->
      <VBox alignment="CENTER" layoutX="14.0" layoutY="170.0" prefHeight="443.0" prefWidth="273.0" spacing="5.0">
          <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Fasilitas:" />
-         <Label text="• 1 Queen Bed">
+         <Label fx:id="bedType" text="• 1 Queen Bed">
          <font>
             <Font size="16.0" />
          </font>
@@ -93,12 +98,12 @@
             <Font size="16.0" />
          </font>
       </Label>
-         <Label text="• Kamar mandi dalam">
+         <Label fx:id="bathUp" text="• Kamar mandi dalam">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-         <Label text="• Air panas">
+         <Label fx:id="hotWater" text="• Air panas">
          <font>
             <Font size="16.0" />
          </font>
@@ -152,14 +157,12 @@
                <Image url="@images/Suite.png" />
             </image>
          </ImageView>
-         <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" />
-         <Button layoutX="10.0" layoutY="16.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="5" />
-         <Button layoutX="10.0" layoutY="16.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="4" />
-         <Button layoutX="10.0" layoutY="16.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="3" />
-         <Button layoutX="10.0" layoutY="16.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="2" />
-         <Button layoutX="10.0" layoutY="16.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="1" />
+         <Button onAction="#switchToStandard" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="0" />
+         <Button onAction="#switchToSuperior" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="1" />
+         <Button onAction="#switchToDeluxe" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="2" />
+         <Button onAction="#switchToJuniorSuite" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="3" />
+         <Button onAction="#switchToSuite" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="4" />
+         <Button onAction="#switchToPresidential" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: none;" GridPane.rowIndex="5" />
       </children>
    </GridPane>
-   <ImageView fitHeight="443.0" fitWidth="976.0" layoutX="305.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true" />
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="128.0" layoutX="1153.0" layoutY="85.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="3.0" width="120.0" />
 </AnchorPane>

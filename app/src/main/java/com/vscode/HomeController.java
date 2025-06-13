@@ -35,9 +35,9 @@ public class HomeController extends User{
     }
 
     @FXML
-    private void switchToStandardRoom() {
+    private void switchToRoom() {
         try {
-            App.setRoot("standardroom");
+            App.setRoot("room");
         } catch (Exception e) {
             e.printStackTrace();
         }

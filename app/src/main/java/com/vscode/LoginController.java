@@ -36,8 +36,8 @@ public class LoginController {
                     HomeController.setUserName(user.name);
                     ContactUsController.setUserName(user.name);
                     AboutController.setUserName(user.name);
+                    RoomController.setUserName(user.name);
 
-                    // Ganti root scene utama, bukan buat stage baru
                     App.setRoot("home");
                     return;
                 }

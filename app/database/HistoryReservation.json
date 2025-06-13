@@ -1,6 +1,7 @@
-[ {
-  "username" : null,
-  "roomType" : "Standard Room",
-  "checkIn" : "2025-06-18",
-  "checkOut" : "2025-06-16"
+[{
+  "roomNumber" : "601",
+  "checkIn" : "2025-06-01",
+  "checkOut" : "2025-06-19",
+  "roomType" : "Presidential Suite",
+  "username" : null
 } ]
