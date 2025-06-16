@@ -51,9 +51,11 @@ public class LoginController {
 
     @FXML
     private void handleRegister() {
-        // Contoh: tampilkan pesan atau nanti bisa diarahkan ke scene register
-        errorLabel.setText("Fitur register belum tersedia.");
-        // Atau bisa load scene register jika sudah ada
-        // TODO: Implementasi scene register jika diperlukan
+        try {
+            App.setRoot("register");
+        } catch (Exception e) {
+            errorLabel.setText("Failed to open registration page.");
+            e.printStackTrace();
+        }
     }
 }

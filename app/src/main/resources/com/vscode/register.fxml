@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<AnchorPane prefHeight="827.0" prefWidth="1281.0" style="-fx-background-image: url('background.jpg'); -fx-background-size: cover;" fx:controller="com.vscode.LoginController">
+<AnchorPane prefHeight="827.0" prefWidth="1281.0" style="-fx-background-image: url('background.jpg'); -fx-background-size: cover;" fx:controller="com.vscode.RegisterController">
 <ImageView fitHeight="866.0" fitWidth="1288.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
 <image>
 <Image url="@images/background.jpg"/>
@@ -20,16 +20,17 @@
 <Font size="28.0"/>
 </font>
 </Label>
-<Label alignment="CENTER" style="-fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold;" text="Login"/>
+<Label alignment="CENTER" style="-fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold;" text="Register"/>
+<TextField fx:id="nameField" promptText="Name" style="-fx-background-radius: 10;"/>
 <TextField fx:id="usernameField" promptText="Username" style="-fx-background-radius: 10;"/>
 <PasswordField fx:id="passwordField" promptText="Password" style="-fx-background-radius: 10;"/>
 <Label fx:id="errorLabel" style="-fx-font-size: 14px;" textFill="#ff3333"/>
-<Button mnemonicParsing="false" prefHeight="34.0" prefWidth="67.0" style="-fx-background-color: #fffb00;" text="Login" onAction="#handleLogin">
+<Button mnemonicParsing="false" prefHeight="41.0" prefWidth="75.0" style="-fx-background-color: #fffb00;" text="Register" onAction="#handleRegister">
 <font>
 <Font size="14.0"/>
 </font>
 </Button>
-<Button onAction="#handleRegister" style="-fx-background-color: transparent; -fx-text-fill: #fffb00; -fx-underline: true;" text="Register"/>
+<Button onAction="#handleBackToLogin" style="-fx-background-color: transparent; -fx-text-fill: #fffb00; -fx-underline: true;" text="Back to Login"/>
 </children>
 </VBox>
 </AnchorPane>
