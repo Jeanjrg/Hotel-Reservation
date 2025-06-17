@@ -1,237 +1,156 @@
-[
-  {
-    "roomType": "Standard Room",
-    "roomNumber": "101",
-    "status": "available",
-     "facilities" : ["Queen Bed","AC","TV","WiFi","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 350000
-  },
-  {
-    "roomType": "Standard Room",
-    "roomNumber": "102",
-    "status": "available",
-     "facilities" : ["Queen Bed","AC","TV","WiFi","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 350000
-  },
-  {
-    "roomType": "Standard Room",
-    "roomNumber": "103",
-    "status": "available",
-     "facilities" : ["Queen Bed","AC","TV","WiFi","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 350000
-  },
-  {
-    "roomType": "Standard Room",
-    "roomNumber": "104",
-    "status": "available",
-     "facilities" : ["Queen Bed","AC","TV","WiFi","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 350000
-  },
-  {
-    "roomType": "Standard Room",
-    "roomNumber": "105",
-    "status": "available",
-     "facilities" : ["Queen Bed","AC","TV","WiFi","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 350000
-  },
-  {
-    "roomType": "Standard Room",
-    "roomNumber": "106",
-    "status": "available",
-     "facilities" : ["Queen Bed","AC","TV","WiFi","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 350000
-  },
-  {
-    "roomType": "Standard Room",
-    "roomNumber": "107",
-    "status": "available",
-     "facilities" : ["Queen Bed","AC","TV","WiFi","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 350000
-  },
-  {
-    "roomType": "Standard Room",
-    "roomNumber": "108",
-    "status": "available",
-     "facilities" : ["Queen Bed","AC","TV","WiFi","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 350000
-  },
-  {
-    "roomType": "Standard Room",
-    "roomNumber": "109",
-    "status": "available",
-     "facilities" : ["Queen Bed","AC","TV","WiFi","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 350000
-  },
-  {
-    "roomType": "Standard Room",
-    "roomNumber": "110",
-    "status": "available",
-    "facilities" : ["Queen Bed","AC","TV","WiFi","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 350000
-  },
-  {
-    "roomType": "Superior Room",
-    "roomNumber": "201",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 500000
-  },
-  {
-    "roomType": "Superior Room",
-    "roomNumber": "202",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 500000
-  },
-  {
-    "roomType": "Superior Room",
-    "roomNumber": "203",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 500000
-  },
-  {
-    "roomType": "Superior Room",
-    "roomNumber": "204",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 500000
-  },
-  {
-    "roomType": "Superior Room",
-    "roomNumber": "205",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 500000
-  },
-  {
-    "roomType": "Superior Room",
-    "roomNumber": "206",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 500000
-  },
-  {
-    "roomType": "Superior Room",
-    "roomNumber": "207",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 500000
-  },
-  {
-    "roomType": "Superior Room",
-    "roomNumber": "208",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Kamar mandi dalam","Air panas","Sarapan gratis"],
-    "pricePerNight": 500000
-  },
-  {
-    "roomType": "Deluxe Room",
-    "roomNumber": "301",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-    "pricePerNight": 700000
-  },
-  {
-    "roomType": "Deluxe Room",
-    "roomNumber": "302",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-
-    "pricePerNight": 700000
-  },
-  {
-    "roomType": "Deluxe Room",
-    "roomNumber": "303",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-
-    "pricePerNight": 700000
-  },
-  {
-    "roomType": "Deluxe Room",
-    "roomNumber": "304",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-
-    "pricePerNight": 700000
-  },
-  {
-    "roomType": "Deluxe Room",
-    "roomNumber": "305",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-
-    "pricePerNight": 700000
-  },
-  {
-    "roomType": "Deluxe Room",
-    "roomNumber": "306",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-
-    "pricePerNight": 700000
-  },
-  {
-    "roomType": "Junior Suite",
-    "roomNumber": "401",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Living Room","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-    "pricePerNight": 1000000
-  },
-  {
-    "roomType": "Junior Suite",
-    "roomNumber": "402",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Living Room","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-    "pricePerNight": 1000000
-  },
-  {
-    "roomType": "Junior Suite",
-    "roomNumber": "403",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Living Room","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-    "pricePerNight": 1000000
-  },
-  {
-    "roomType": "Junior Suite",
-    "roomNumber": "404",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Living Room","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-    "pricePerNight": 1000000
-  },
-  {
-    "roomType": "Suite",
-    "roomNumber": "501",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Living Room","Balcony","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-    "pricePerNight": 1500000
-  },
-  {
-    "roomType": "Suite",
-    "roomNumber": "502",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Living Room","Balcony","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-    "pricePerNight": 1500000
-  },
-  {
-    "roomType": "Presidential Suite",
-    "roomNumber": "601",
-    "status": "available",
-    "facilities" : ["1 King Bed","AC","TV","WiFi","Minibar","Bathtub","Living Room","Balcony","Kitchen","Kamar mandi dalam","Air panas","Sarapan gratis"
-    ],
-    "pricePerNight": 3000000
-  }
-]
+[ {
+  "roomType" : "Standard Room",
+  "roomNumber" : "101",
+  "status" : "Available",
+  "price" : 350000
+}, {
+  "roomType" : "Standard Room",
+  "roomNumber" : "102",
+  "status" : "Available",
+  "price" : 350000
+}, {
+  "roomType" : "Standard Room",
+  "roomNumber" : "103",
+  "status" : "Available",
+  "price" : 350000
+}, {
+  "roomType" : "Standard Room",
+  "roomNumber" : "104",
+  "status" : "Available",
+  "price" : 350000
+}, {
+  "roomType" : "Standard Room",
+  "roomNumber" : "105",
+  "status" : "Available",
+  "price" : 350000
+}, {
+  "roomType" : "Standard Room",
+  "roomNumber" : "106",
+  "status" : "Available",
+  "price" : 350000
+}, {
+  "roomType" : "Standard Room",
+  "roomNumber" : "107",
+  "status" : "Available",
+  "price" : 350000
+}, {
+  "roomType" : "Standard Room",
+  "roomNumber" : "108",
+  "status" : "Available",
+  "price" : 350000
+}, {
+  "roomType" : "Standard Room",
+  "roomNumber" : "109",
+  "status" : "Available",
+  "price" : 350000
+}, {
+  "roomType" : "Standard Room",
+  "roomNumber" : "110",
+  "status" : "Available",
+  "price" : 350000
+}, {
+  "roomType" : "Superior Room",
+  "roomNumber" : "201",
+  "status" : "Available",
+  "price" : 500000
+}, {
+  "roomType" : "Superior Room",
+  "roomNumber" : "202",
+  "status" : "Available",
+  "price" : 500000
+}, {
+  "roomType" : "Superior Room",
+  "roomNumber" : "203",
+  "status" : "Available",
+  "price" : 500000
+}, {
+  "roomType" : "Superior Room",
+  "roomNumber" : "204",
+  "status" : "Available",
+  "price" : 500000
+}, {
+  "roomType" : "Superior Room",
+  "roomNumber" : "205",
+  "status" : "Available",
+  "price" : 500000
+}, {
+  "roomType" : "Superior Room",
+  "roomNumber" : "206",
+  "status" : "Available",
+  "price" : 500000
+}, {
+  "roomType" : "Superior Room",
+  "roomNumber" : "207",
+  "status" : "Available",
+  "price" : 500000
+}, {
+  "roomType" : "Superior Room",
+  "roomNumber" : "208",
+  "status" : "Available",
+  "price" : 500000
+}, {
+  "roomType" : "Deluxe Room",
+  "roomNumber" : "301",
+  "status" : "Available",
+  "price" : 700000
+}, {
+  "roomType" : "Deluxe Room",
+  "roomNumber" : "302",
+  "status" : "Available",
+  "price" : 700000
+}, {
+  "roomType" : "Deluxe Room",
+  "roomNumber" : "303",
+  "status" : "Available",
+  "price" : 700000
+}, {
+  "roomType" : "Deluxe Room",
+  "roomNumber" : "304",
+  "status" : "Available",
+  "price" : 700000
+}, {
+  "roomType" : "Deluxe Room",
+  "roomNumber" : "305",
+  "status" : "Available",
+  "price" : 700000
+}, {
+  "roomType" : "Deluxe Room",
+  "roomNumber" : "306",
+  "status" : "Available",
+  "price" : 700000
+}, {
+  "roomType" : "Junior Suite",
+  "roomNumber" : "401",
+  "status" : "Available",
+  "price" : 1000000
+}, {
+  "roomType" : "Junior Suite",
+  "roomNumber" : "402",
+  "status" : "Available",
+  "price" : 1000000
+}, {
+  "roomType" : "Junior Suite",
+  "roomNumber" : "403",
+  "status" : "Available",
+  "price" : 1000000
+}, {
+  "roomType" : "Junior Suite",
+  "roomNumber" : "404",
+  "status" : "Available",
+  "price" : 1000000
+}, {
+  "roomType" : "Suite",
+  "roomNumber" : "501",
+  "status" : "Available",
+  "price" : 1500000
+}, {
+  "roomType" : "Suite",
+  "roomNumber" : "502",
+  "status" : "Available",
+  "price" : 1500000
+}, {
+  "roomType" : "Presidential Suite",
+  "roomNumber" : "601",
+  "status" : "Not Available",
+  "price" : 3000000
+} ]

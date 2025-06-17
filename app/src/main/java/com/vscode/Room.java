@@ -1,5 +1,6 @@
 package com.vscode;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -66,6 +67,14 @@ public abstract class Room {
 class StandardRoom extends Room {
     @Override
     public List<String> getFacilities() {
+        List<String> facilities = new ArrayList<>();
+        facilities.add("1 Queen Bed");
+        facilities.add("AC");
+        facilities.add("TV");
+        facilities.add("WiFi");
+        facilities.add("Kamar mandi dalam");
+        facilities.add("Air panas");
+        facilities.add("Sarapan gratis");
         return facilities;
     }
     @Override
@@ -77,6 +86,15 @@ class StandardRoom extends Room {
 class SuperiorRoom extends Room {
     @Override
     public List<String> getFacilities() {
+        List<String> facilities = new ArrayList<>();
+        facilities.add("1 King Bed");
+        facilities.add("AC");
+        facilities.add("TV");
+        facilities.add("WiFi");
+        facilities.add("Kamar mandi dalam");
+        facilities.add("Air panas");
+        facilities.add("Sarapan gratis");
+        facilities.add("Mini Bar");
         return facilities;
     }
     @Override
@@ -88,6 +106,16 @@ class SuperiorRoom extends Room {
 class DeluxeRoom extends Room {
     @Override
     public List<String> getFacilities() {
+        List<String> facilities = new ArrayList<>();
+        facilities.add("2 Queen Bed");
+        facilities.add("AC");
+        facilities.add("TV");
+        facilities.add("WiFi");
+        facilities.add("Kamar mandi dalam");
+        facilities.add("Air panas");
+        facilities.add("Sarapan gratis");
+        facilities.add("Mini Bar");
+        facilities.add("Bathtub");
         return facilities;
     }
     @Override
@@ -99,6 +127,17 @@ class DeluxeRoom extends Room {
 class JuniorSuite extends Room {
     @Override
     public List<String> getFacilities() {
+        List<String> facilities = new ArrayList<>();
+        facilities.add("1 King Bed + 1 Sofa Bed");
+        facilities.add("AC");
+        facilities.add("TV");
+        facilities.add("WiFi");
+        facilities.add("Kamar mandi dalam");
+        facilities.add("Air panas");
+        facilities.add("Sarapan gratis");
+        facilities.add("Mini Bar");
+        facilities.add("Bathtub");
+        facilities.add("Living Room");
         return facilities;
     }
     @Override
@@ -110,6 +149,18 @@ class JuniorSuite extends Room {
 class Suite extends Room {
     @Override
     public List<String> getFacilities() {
+        List<String> facilities = new ArrayList<>();
+        facilities.add("2 King Bed");
+        facilities.add("AC");
+        facilities.add("TV");
+        facilities.add("WiFi");
+        facilities.add("Kamar mandi dalam");
+        facilities.add("Air panas");
+        facilities.add("Sarapan gratis");
+        facilities.add("Mini Bar");
+        facilities.add("Bathtub");
+        facilities.add("Living Room");
+        facilities.add("Dapur Kecil");
         return facilities;
     }
     @Override
@@ -121,6 +172,20 @@ class Suite extends Room {
 class PresidentialSuite extends Room {
     @Override
     public List<String> getFacilities() {
+        List<String> facilities = new ArrayList<>();
+        facilities.add("2 King Bed + 1 Sofa Bed");
+        facilities.add("AC");
+        facilities.add("TV");
+        facilities.add("WiFi");
+        facilities.add("Kamar mandi dalam");
+        facilities.add("Air panas");
+        facilities.add("Sarapan gratis");
+        facilities.add("Mini Bar");
+        facilities.add("Bathtub");
+        facilities.add("Living Room");
+        facilities.add("Dapur Kecil");
+        facilities.add("Private Pool");
+        facilities.add("Butler Service");
         return facilities;
     }
     @Override

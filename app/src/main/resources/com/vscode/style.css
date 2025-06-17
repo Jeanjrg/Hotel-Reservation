@@ -19,3 +19,7 @@
     -fx-background-color: #fffb00;
     -fx-text-fill: black;
 }
+.list-cell {
+    -fx-alignment: center;
+    -fx-font-size: 16px;
+}
